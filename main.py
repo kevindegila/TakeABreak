@@ -7,12 +7,12 @@ parser.add_argument("--session", "-s", type=int)
 parser.add_argument("--duree", "-d", help="Duree d'une session en minute", type=int)
 parser.add_argument("--pause", "-p", help="La durée de la pause en minute", type=int)
 args = parser.parse_args()
-print(type(args))
+
 
 
 def session(duree, pause):
     """
-    Lance une session de travail de durée minute,
+    Lance une session de travail de "durée" minute,
     ouvre une vidéo dans le navigateur
     et fais une pause de "pause" minute
     :param duree:
